@@ -25,6 +25,8 @@ class PayslipRenamer < Formula
       The `monitor` command expects two environment variables:
         - `PAYSLIP_RENAMER_DIRECTORY`: the directory to watch for new payslip
         - `PAYSLIP_RENAMER_DATE_PATTERN`: optional, the pattern to extract the date, it expects three captures, example: `DATE PAYABLE: (\d{4})/(\d{2})/(\d{2})`
+      You must use `launchctl` to set the environment variables:
+        `launchctl setenv PAYSLIP_RENAMER_DIRECTORY "/Users/You/your_folder/payslips"`
 
       To start the monitor service:
         brew services start payslip-renamer
