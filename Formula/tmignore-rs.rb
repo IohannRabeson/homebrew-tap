@@ -3,8 +3,8 @@ class TmignoreRs < Formula
   homepage "https://github.com/IohannRabeson/tmignore-rs"
   url "https://github.com/IohannRabeson/tmignore-rs.git",
       using:    :git,
-      revision: "90cc6e7d205b0579fa84ec911bf9cfa7928308fd"
-  version "0.2.0-test4"
+      revision: "c7dc66e77d0ad6f16290545152a823fad4681397"
+  version "0.2.0-test5"
   license "MIT"
   depends_on "rust" => :build
   depends_on :macos
