@@ -10,6 +10,7 @@ class TmignoreRs < Formula
   depends_on :macos
 
   def install
+    ENV["TMIGNORE_RS_VERSION"] = version
     system "cargo", "install", *std_cargo_args
   end
 
