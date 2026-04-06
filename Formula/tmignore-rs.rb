@@ -4,7 +4,7 @@ class TmignoreRs < Formula
   url "https://github.com/IohannRabeson/tmignore-rs.git",
       using:    :git,
       revision: "c2e28abe91755ced4d9873c9bc7fb8a783787b57"
-  version "0.2.0-test6"
+  version "0.2.0-test7"
   license "MIT"
   depends_on "rust" => :build
   depends_on :macos
