@@ -24,7 +24,7 @@ class TmignoreRs < Formula
   def caveats
     <<~EOS
       tmignore-rs reads its configuration from:
-        ~/.config/tmignore/config.json
+        ~/.config/tmignore-rs/config.json
 
       A default configuration will be created automatically on first run.
 
