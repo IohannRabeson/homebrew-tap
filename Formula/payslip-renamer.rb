@@ -3,8 +3,8 @@ class PayslipRenamer < Formula
   homepage "https://github.com/IohannRabeson/payslip-renamer"
   url "https://github.com/IohannRabeson/payslip-renamer.git",
       using:    :git,
-      revision: "e7ca4e3be0fc8345847e7958367cfd725eaa8eb8"
-  version "0.1.1"
+      revision: "310cce694c0e9445626d0b251216b29bdac6ad5d"
+  version "0.1.2"
   license "MIT"
   depends_on "rust" => :build
   depends_on :macos
