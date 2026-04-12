@@ -10,6 +10,7 @@ class PayslipRenamer < Formula
   depends_on :macos
 
   def install
+    ENV["PAYSLIP_RENAMER_VERSION"] = version
     system "cargo", "install", *std_cargo_args
   end
 
