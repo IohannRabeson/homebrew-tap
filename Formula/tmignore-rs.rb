@@ -11,7 +11,7 @@ class TmignoreRs < Formula
 
   def install
     ENV["TMIGNORE_RS_VERSION"] = version
-    system "cargo", "install", *std_cargo_args
+    system "cargo", "install", "--profile=final", *std_cargo_args
   end
 
   service do
