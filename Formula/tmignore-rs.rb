@@ -1,17 +1,22 @@
 class TmignoreRs < Formula
   desc "Makes Time Machine respect .gitignore files"
   homepage "https://github.com/IohannRabeson/tmignore-rs"
-  url "https://github.com/IohannRabeson/tmignore-rs.git",
-      using:    :git,
-      revision: "52f962642b6b90e82598a06c9d229799426c8aaa"
-  version "0.3.2"
+  version "0.3.4"
   license "MIT"
-  depends_on "rust" => :build
   depends_on :macos
 
+  on_arm do
+    url "https://github.com/IohannRabeson/tmignore-rs/releases/download/0.3.4/tmignore-rs_0.3.4_aarch64.zip"
+    sha256 "f2fc25d90d5ee76a0e630adc176f7446b58462673b993c0bdb39e3de577976b4"
+  end
+
+  on_intel do
+    url "https://github.com/IohannRabeson/tmignore-rs/releases/download/0.3.4/tmignore-rs_0.3.4_x86-64.zip"
+    sha256 "ee42ce744ec8f18d8109896d4ed6e26d93621deb584aaef222df4e8f51532896"
+  end
+
   def install
-    ENV["TMIGNORE_RS_VERSION"] = version
-    system "cargo", "install", "--profile=final", *std_cargo_args
+    bin.install "tmignore-rs"
   end
 
   service do
