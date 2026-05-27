@@ -1,18 +1,18 @@
 class TmignoreRs < Formula
   desc "Makes Time Machine respect .gitignore files"
   homepage "https://github.com/IohannRabeson/tmignore-rs"
-  version "0.3.5"
+  version "0.3.6"
   license "MIT"
   depends_on :macos
 
   on_arm do
-    url "https://github.com/IohannRabeson/tmignore-rs/releases/download/0.3.5/tmignore-rs_0.3.5_aarch64.zip"
-    sha256 "9097bed9b7f47a03c0213a14b608046e6a0751b832a3379b0a7a26f4221a9083"
+    url "https://github.com/IohannRabeson/tmignore-rs/releases/download/0.3.6/tmignore-rs_0.3.6_aarch64.zip"
+    sha256 "347e2464e3f90e0fb8f81d03692f1bb89dd40fbea5f45f4e88f7b00adcce947a"
   end
 
   on_intel do
-    url "https://github.com/IohannRabeson/tmignore-rs/releases/download/0.3.5/tmignore-rs_0.3.5_x86-64.zip"
-    sha256 "7b6c5b829a8873a5aa471c91204a29ee6a2ac139a504592f617f11d97f1fcb4d"
+    url "https://github.com/IohannRabeson/tmignore-rs/releases/download/0.3.6/tmignore-rs_0.3.6_x86-64.zip"
+    sha256 "9ede9e11509a84e31fc23975bb7f969937998afce54946f47d0067dc05619abf"
   end
 
   def install
