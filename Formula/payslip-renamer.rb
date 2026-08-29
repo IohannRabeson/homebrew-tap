@@ -1,9 +1,9 @@
 class PayslipRenamer < Formula
   desc "A tool to rename payslip"
   homepage "https://github.com/IohannRabeson/payslip-renamer"
-  url "https://github.com/IohannRabeson/payslip-renamer/releases/download/0.1.3/payslip-renamer_0.1.3_aarch64.zip"
-  sha256 "1d282cf6141c0e26350c5bcf43e598a7206e231f4cdf5cabbc1753f366ff0c5b"
-  version "0.1.3"
+  url "https://github.com/IohannRabeson/payslip-renamer/releases/download/v0.1.2/payslip-renamer_v0.1.2_aarch64.zip"
+  sha256 "7546daa82a6962d96fc8566fa2d5c3cc1b7d8ade3de352434ddc4fdf2166ae40"
+  version "v0.1.2"
   license "MIT"
   depends_on :macos
 
